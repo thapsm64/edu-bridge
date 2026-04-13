@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="forms.css">
+
+    <title>Sponsor Application</title>
+</head>
+<body>
+
+    <nav>
+        <div>
+            <h1 class="logo">EduBridge Initiative</h1>
+        </div>
+    <div class = "menu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <div class="dropdown">
+  <button class="dropbtn">Apply</button>
+  <div class="dropdown-content">
+    <a href="students.html">For Students</a>
+    <a href="sponsors.html">For Sponsors</a>
+  </div>
+</div>
+            <li><a href="contact.html" class="margin-r">Contact Us</a></li>
+        </ul>
+    </div>
+
+    </nav>
+<form id="sponsorForm">
+    <h1>Become a Sponsor</h1>
+    <p>Join us in supporting students to achieve their educational dreams.</p>
+
+    <form action="#" method="post">
+
+        <label>Full Name / Company Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email Address:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone"><br><br>
+
+        <label>Type of Sponsor:</label><br>
+        <select name="type">
+            <option value="">Select</option>
+            <option>Individual</option>
+            <option>Company</option>
+            <option>Organization</option>
+        </select><br><br>
+
+        <label>Amount Willing to Donate(ZAR):</label><br>
+        <input type="number" name="amount"><br><br>
+
+        <label>Preferred Field to Support:</label><br>
+        <input type="text" name="field"><br><br>
+
+        <label>Message / Motivation:</label><br>
+        <textarea name="message" rows="5" cols="40"></textarea><br><br>
+
+        <label>
+            <input type="checkbox" name="terms" required>
+            I agree to support students through this initiative
+        </label><br><br>
+
+        <input type="submit" value="Become a Sponsor">
+
+    </form>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contact.css">
+
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <h1 class="logo">EduBridge Initiative</h1>
+        </div>
+    <div class = "menu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <div class="dropdown">
+  <button class="dropbtn">Apply</button>
+  <div class="dropdown-content">
+    <a href="students.html">For Students</a>
+    <a href="sponsors.html">For Sponsors</a>
+  </div>
+</div>
+            <li><a href="contact.html" class="margin-r">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    </nav>
+<form id="contactForm">
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p> For Any Queries</p>
+  </div>
+  <div class="row">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+        
+<script src="script.js"></script> 
+</body>
+</html>

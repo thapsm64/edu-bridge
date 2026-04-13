@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body { 
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:cover ;
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 30px;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #facc15;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color:white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:orange;
+    min-width: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color:black;
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contact-info {
+    margin-top: 100px;
+    padding: 20px;
+    width: fit-content;
+    background-color: whitesmoke;
+    border-top-right-radius: 10px;
+    color: black;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: left;
+    color: black;
+}
+
+footer {
+    background: turquoise;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+.container h2 {
+    text-align: center;
+    color: whitesmoke;
+}
+.logo {
+    text-align: center;    
+    color:orange;         
+    font-size: 36px;       
+    font-weight: bold;      
+    margin: 20px 0;         
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container p {
+    color: #f5f909;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.container p strong {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 26px;
+    color: #f5f909;
+    letter-spacing: 2px;
+}
+
+
+.impact {
+  background: transparent;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.impact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.impact-box {
+  margin: 20px;
+  padding: 20px;
+  background: transparent;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.impact-box h1 {
+  color:#facc15 ;
+  font-size: 30px;
+}
+
+.impact-box {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.section h2{
+font-size: 25px;
+color: #facc15;
+}
+
+.cta {
+  background: turquoise;
+  color: white;
+  text-align: right;
+  padding: 60px 20px;
+}
+
+.cta-btn {
+  background: turquoise;
+  color: black;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: orange;
+  color: black;
+  transform: scale(1.05);
+}
+
+.secondary-btn {
+  background: turquoise;
+  border: 2px solid black;
+  color: black;
+}
+
+.secondary-btn:hover {
+  background: orange;
+  color: black;
+}
+

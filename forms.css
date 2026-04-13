@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps background from scrolling */
+    background-position: center;  /* Changed from 'cover' to 'center' */
+    color: white;
+    font-size: 1rem; /* 2rem is very large for body text; 1rem is standard */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 30px;
+}
+menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #facc15;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color:white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:orange;
+    min-width: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color:black;
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background: #facc15;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#sponsorForm {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#sponsorForm h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#sponsorForm p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px; /* Increased margin for better spacing */
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #27ae60;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #219150;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #sponsorForm {
+        margin: 20px;
+        width: calc(100% - 40px);
+    }
+}
+/* 1. Global Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6; /* Light gray background for a professional look */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 2. Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 30px;}
+
+.logo {
+   text-align: center;    
+    color:orange;         
+    font-size: 36px;       
+    font-weight: bold;      
+    margin: 20px 0;         
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu ul li a, .dropbtn {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    font-size: 24px;
+    transition: 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu ul li a:hover, .dropdown:hover .dropbtn {
+    color: #facc15;
+}
+
+/* 3. Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    top: 100%;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1,5rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 4. Student Application Form Styling */
+#studentForm {
+     max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);;
+}
+
+#studentForm h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#studentForm p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* 5. Form Elements */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fdfdfd;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #facc15;
+    outline: none;
+    background-color: #fff;
+}
+
+input[type="file"] {
+    padding: 10px 0;
+}
+
+/* 6. Submit Button */
+input[type="submit"] {
+    width: 100%;
+    background-color:#facc15;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #facc15;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.99);
+}
+
+/* 7. Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .menu ul {
+        margin-top: 15px;
+    }
+
+    #studentForm {
+        margin: 20px;
+        padding: 20px;
+    }
+}
